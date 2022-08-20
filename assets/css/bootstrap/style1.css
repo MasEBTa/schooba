@@ -1,0 +1,142 @@
+html , body{
+	height: 100%;
+}
+
+#wrap {
+height: 91%;
+}
+ 
+#main {
+overflow: auto;
+padding-bottom:5rem;  /*this needs to be bigger than footer height*/
+white-space: normal;
+max-height: 100%;
+}
+
+#footer {
+position: relative;
+height: 4rem;
+margin-top: -4rem;  /*negative value of footer height */
+clear:both;
+padding-top:0.5rem;
+}
+
+#pengisi-atas {
+	height: 80px;
+}
+/*pengaturan untuk hp dan tablet*/
+	@media screen and (max-width: 991px){
+		/*mading hp dan tablet*/
+		#judul-mading {
+			float: left;
+			display: inline-block;
+		}
+		#next {
+			float: right;
+			display: inline;
+			text-align: left;
+		}
+		#pengisi-kosong {
+			clear: both;
+		}
+		.col-md-12 .kartu-blog {
+			margin: 0.5rem 0.5rem 1rem 0.5rem; /*atas kanan bawah kiri*/
+			width: 10rem;
+			height: 8rem;
+			text-align: center;
+			display: inline-block;
+			border-radius: 8%;
+			box-shadow: 0 0 0.1px 0.1px grey, 0 0 3px 0.1px grey;
+		}
+		.col-md-12 .scroll {
+			overflow: auto;
+			white-space: nowrap;
+		}
+		.col-md-12 .scrolless {
+			overflow: auto;
+			white-space: nowrap;
+		}
+		/*akhir desain mading hp dan tablet*/
+
+		/*akhir desain kelas hp dan tablet*/
+		#header-kelas {
+		}
+		#footer {
+			visibility: hidden;
+		}
+		/*akhir desain kelas hp dan tablet*/
+	}
+/*pengaturan untuk hp dan tablet*/
+
+/*pengaturan untuk laptop*/
+	/*mading laptop*/
+	@media screen and (min-width: 992px){
+		.col-lg-2 .kartu-blog {
+			width: 90%;
+			height: 6rem;
+			text-align: center;
+			display: inline-block;
+			border-radius: 8%;
+			margin: 1rem;
+			white-space: nowrap;
+			box-shadow: 0 0 0.1px 0.1px grey, 0 0 2px 2px grey;
+		}
+		.col-lg-10 .kartu-blog {
+			width: 10rem;
+			height: 8rem;
+			text-align: center;
+			display: inline-block;
+			border-radius: 8%;
+			margin: 1rem;
+			white-space: nowrap;
+			box-shadow: 0 0 0.1px 0.1px grey, 0 0 2px 2px grey;
+		}
+		.col-md-12 .scrolless {
+			overflow: auto;
+			white-space: nowrap;
+		}
+		#header-mading {
+			margin-top: 0.2rem;
+			box-shadow: 0 0 0.1px 0.1px grey, 0 0 2px 0.1px grey;
+			border-radius: 5%;
+			width: 100%;
+			white-space: nowrap;
+		}
+		#pengisi-kosong {
+			clear: both;
+		}
+		#judul-mading {
+			float: left;
+			display: inline-block;
+		}
+		#next {
+			float: right;
+			display: inline;
+			text-align: left;
+			visibility: hidden;
+		}
+		.kotak {
+			max-height: 1000px;
+			overflow: auto;
+		}
+	}
+	/*akhir desain mading laptop*/
+	#header-kelas {
+			margin-top: 0.2rem;
+			box-shadow: 0 0 0.1px 0.1px grey, 0 0 2px 0.1px grey;
+			border-radius: 5%;
+			width: 100%;
+			white-space: nowrap;
+	}
+	.list {
+		width: 95%;
+		text-align: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-radius: 5%;
+		margin: 1rem;
+		box-shadow: 0 0 50px 2px grey, 0 0 2px 1px grey;
+	}
+/*akhir desain pengaturan untuk laptop*/
